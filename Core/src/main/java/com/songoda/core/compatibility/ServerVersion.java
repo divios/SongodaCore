@@ -41,6 +41,10 @@ public enum ServerVersion {
         return serverPackageVersion;
     }
 
+    public static String getServerPackagePath() {
+        return serverPackagePath;
+    }
+
     public static String getVersionReleaseNumber() {
         return serverReleaseVersion;
     }

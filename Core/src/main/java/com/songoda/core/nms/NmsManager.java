@@ -1,5 +1,6 @@
 package com.songoda.core.nms;
 
+import com.songoda.core.nbtinjector.NBTInjector;
 import com.songoda.core.nms.anvil.AnvilCore;
 import com.songoda.core.nms.nbt.NBTCore;
 import org.bukkit.Bukkit;
@@ -93,6 +94,7 @@ public class NmsManager {
     }
 
     public static NBTCore getNbt() {
+        NBTInjector.inject();
         return nbt;
     }
 
